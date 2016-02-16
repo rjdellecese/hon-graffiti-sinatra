@@ -16,7 +16,7 @@ post '/submit' do
   end
 end
 
-get '/models' do
+get '/quotes' do
   @quotes = Quote.all
   erb :quotes
 end
