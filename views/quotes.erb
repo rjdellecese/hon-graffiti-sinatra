@@ -1,0 +1,9 @@
+<h3>All Quotes</h3>
+<ul>
+  <% @quotes.each do |quote| %>>
+    <li>
+      <%= quote.text %>
+    </li>
+  <% end %>
+</ul>
+<a href="/">Back to Home</a>
