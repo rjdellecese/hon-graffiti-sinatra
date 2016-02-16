@@ -5,6 +5,9 @@ require './models/quote'
 require 'sinatra/base'
 require 'sinatra/assetpack'
 require 'rubygems'
+require 'will_paginate'
+require 'will_paginate/active_record'
+require 'will_paginate-foundation'
 
 assets do
   serve '/js', from: 'js'
@@ -26,10 +29,6 @@ assets do
   js_compression :jsmin
 end
   
-get '/foundation' do
-  html :index
-end
-  
 get '/' do
   erb :index
 end
@@ -44,6 +43,6 @@ post '/submit' do
 end
 
 get '/quotes' do
-  @quotes = Quote.all
+  @quotes = Quote.paginate(page: params[:page], per_page: 10)
   erb :quotes
 end

@@ -1,5 +1,26 @@
-<h3>Welcome to HoN Quotes!</h3>
-<form action="/submit" method="POST">
-  <input type="text" name="quote[text]" value="Enter quote text" />
-  <input type="submit" value="Submit" />
-</form>
+<div class="row">
+  <div class="small-12 columns">
+    <h3 class="text-center">Welcome to HoN Quotes!</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <form action="/submit" method="POST">
+      <div class="row collapse">
+        <div class="small-10 columns">
+          <input type="text" name="quote[text]" placeholder="Enter quote text" />
+        </div>
+        <div class="small-2 columns">
+          <input class="button postfix" type="submit" value="Submit" />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns text-center">
+    <a class="button" href="/quotes">View all quotes</a>
+  </div>
+</div>
