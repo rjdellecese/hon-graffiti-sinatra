@@ -84,8 +84,8 @@ body {
 
 /* line 502, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
-  background: #fff;
-  color: #222;
+  background: #0D1215;
+  color: #FFFFFF;
   cursor: auto;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -7950,7 +7950,7 @@ p aside {
 /* Default header styles */
 /* line 255, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #FFFFFF;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -7961,7 +7961,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 265, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  color: #6f6f6f;
+  color: white;
   font-size: 60%;
   line-height: 0;
 }
@@ -7999,7 +7999,7 @@ h6 {
 /* line 279, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: white;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8133,7 +8133,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #FFFFFF;
   cursor: help;
 }
 
@@ -8157,7 +8157,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: white;
 }
 /* line 414, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -8166,14 +8166,14 @@ blockquote cite:before {
 /* line 418, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: white;
 }
 
 /* line 424, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: white;
 }
 
 /* Microformats */

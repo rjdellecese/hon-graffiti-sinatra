@@ -1,29 +1,15 @@
-# Foundation Compass Template
+# HoN Graffiti
 
-The easiest way to get started with Foundation + Compass.
+This app is for storing, viewing and creating player quotes and one-line emotes/"chat
+ macros" for the MOBA [Heroes of Newerth](http://www.heroesofnewerth.com/). It is
+ written in Ruby with the [Sinatra](http://www.sinatrarb.com/) framework and styled
+ with [Foundation](http://foundation.zurb.com/).
 
-## Requirements
+## Pending Features
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
-
-## Quickstart
-
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
-
-```bash
-bundle exec compass watch
-```
-
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+- Completion of base styling/layout
+- Differentiation between quotes and emotes/"chat macros"
+- Parsing of quotes for database storage and colored display on page
+- Raw text copy to clipboard option
+- Create your own quote/emote form and method
+- Add HoN font to site
