@@ -1,6 +1,5 @@
 @import "settings";
 @import "foundation";
-@import "fonts/frizquareregular";
 
 // Or selectively include components
 // @import
@@ -40,6 +39,16 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+@import "compass/css3/font-face";
+
+@include font-face('game-webfont',
+    font-files(
+    'game-webfont.woff', woff,
+    'game-webfont.woff2', woff2,
+    'game-webfont.ttf', ttf,
+    'game-webfont.svg', svg),
+    'game-webfont.eot');
+
 .quote {
-   font-family: "frizquaregregular";
+   font-family: 'game-webfont';
 }

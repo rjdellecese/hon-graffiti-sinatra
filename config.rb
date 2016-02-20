@@ -5,6 +5,7 @@ add_import_path "bower_components/foundation/scss"
 http_path = "/"
 css_dir = "public/stylesheets"
 sass_dir = "scss"
+font_dir = "scss/fonts"
 images_dir = "images"
 javascripts_dir = "js"
 
