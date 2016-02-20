@@ -5,7 +5,7 @@ add_import_path "bower_components/foundation/scss"
 http_path = "/"
 css_dir = "public/stylesheets"
 sass_dir = "scss"
-font_dir = "scss/fonts"
+fonts_dir = "public/fonts"
 images_dir = "images"
 javascripts_dir = "js"
 
@@ -13,7 +13,7 @@ javascripts_dir = "js"
 # output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false

@@ -30,19 +30,15 @@ assets do
 end
   
 get '/' do
+  @quotes = Quote.paginate(page: params[:page], per_page: 20)
   erb :index
 end
 
 post '/submit' do
   @quote = Quote.new(params[:quote])
   if @quote.save
-    redirect '/quotes'
+    redirect '/'
   else
-    'You messed SOMETHING up.'
+    'Quote did not save.'
   end
-end
-
-get '/quotes' do
-  @quotes = Quote.paginate(page: params[:page], per_page: 10)
-  erb :quotes
 end

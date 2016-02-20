@@ -84,10 +84,10 @@ body {
 
 /* line 502, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
-  background: #0D1215;
+  background: #191919;
   color: #FFFFFF;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -1706,7 +1706,7 @@ select {
   background: #EFEFEF;
   color: #222222;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-size: 1rem;
   padding: 1rem;
 }
@@ -2417,7 +2417,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -5153,7 +5153,7 @@ kbd {
 /* line 91, ../../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -5599,14 +5599,14 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.p
 }
 /* line 69, ../../bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li.current a, ul.pagination li.current button {
-  background: #008CBA;
-  color: #FFFFFF;
+  background: #e7e7e7;
+  color: #000000;
   cursor: default;
   font-weight: bold;
 }
 /* line 75, ../../bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
-  background: #008CBA;
+  background: #e7e7e7;
 }
 /* line 137, ../../bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li {
@@ -5717,7 +5717,7 @@ ul.pagination li {
 .pricing-table .title {
   background-color: #333333;
   color: #EEEEEE;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-size: 1rem;
   font-weight: normal;
   padding: 0.9375rem 1.25rem;
@@ -5727,7 +5727,7 @@ ul.pagination li {
 .pricing-table .price {
   background-color: #F6F6F6;
   color: #333333;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-size: 2rem;
   font-weight: normal;
   padding: 0.9375rem 1.25rem;
@@ -6123,7 +6123,7 @@ ul.pagination li {
 /* line 118, ../../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav {
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -6154,7 +6154,7 @@ ul.pagination li {
 /* line 91, ../../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.active > a:first-child:not(.button) {
   color: #1cc7ff;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-weight: normal;
 }
 /* line 97, ../../bower_components/foundation/scss/foundation/components/_side-nav.scss */
@@ -6340,7 +6340,7 @@ ul.pagination li {
 .sub-nav li {
   color: #999999;
   float: left;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-size: 0.875rem;
   font-weight: normal;
   margin-left: 1rem;
@@ -6623,7 +6623,7 @@ table tr td {
   display: block;
   background-color: #EFEFEF;
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-size: 1rem;
   padding: 1rem 2rem;
 }
@@ -7078,7 +7078,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   color: #FFFFFF;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Friz Quadrata";
   font-size: 0.8125rem;
   font-weight: normal;
   padding-left: 0.9375rem;
@@ -7951,7 +7951,7 @@ p aside {
 /* line 255, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Scurlock";
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -9736,11 +9736,16 @@ th.hide-for-touch {
   }
 }
 @font-face {
-  font-family: "game-webfont";
-  src: url('/fonts/game-webfont.eot?1455929990');
-  src: url('/fonts/game-webfont.eot?&1455929990#iefix') format('embedded-opentype'), url('/fonts/game-webfont.woff?1455929990') format('woff'), url('/fonts/game-webfont.woff2?1455929990') format('woff2'), url('/fonts/game-webfont.ttf?1455929990') format('truetype'), url('/fonts/game-webfont.svg?1455929990') format('svg');
+  font-family: "Friz Quadrata";
+  src: url('../fonts/friz-quadrata-webfont.eot?1455929990');
+  src: url('../fonts/friz-quadrata-webfont.eot?&1455929990#iefix') format('embedded-opentype'), url('../fonts/friz-quadrata-webfont.woff?1455929990') format('woff'), url('../fonts/friz-quadrata-webfont.woff2?1455929990') format('woff2'), url('../fonts/friz-quadrata-webfont.ttf?1455929990') format('truetype'), url('../fonts/friz-quadrata-webfont.svg?1455929990') format('svg');
 }
-/* line 52, ../../scss/app.scss */
-.quote {
-  font-family: 'game-webfont';
+@font-face {
+  font-family: "Scurlock";
+  src: url('../fonts/scurlock-webfont.eot?1456006863');
+  src: url('../fonts/scurlock-webfont.eot?&1456006863#iefix') format('embedded-opentype'), url('../fonts/scurlock-webfont.woff?1456006864') format('woff'), url('../fonts/scurlock-webfont.woff2?1456006864') format('woff2'), url('../fonts/scurlock-webfont.ttf?1456006864') format('truetype'), url('../fonts/scurlock-webfont.svg?1456006864') format('svg');
+}
+/* line 60, ../../scss/app.scss */
+ul {
+  list-style-type: none;
 }

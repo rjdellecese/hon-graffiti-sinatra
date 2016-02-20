@@ -113,12 +113,12 @@ $white       : #FFFFFF;
 // $tuatara     : #444444;
 // $oil         : #333333;
 // $jet         : #222222;
-// $black       : #000000;
-$hon-grey: #0D1215;
+$black       : #000000;
+$hon-grey: #191919;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+$secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -127,7 +127,7 @@ $hon-grey: #0D1215;
 // We use these to control various global styles
 $body-bg: $hon-grey;
 $body-font-color: $white;
-// $body-font-family: $font-family-sans-serif;
+$body-font-family: 'Friz Quadrata';
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -211,7 +211,7 @@ $body-font-color: $white;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: 'Scurlock';
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 $header-font-color: $white;
@@ -978,11 +978,11 @@ $header-font-color: $white;
 // $pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
-// $pagination-link-current-background: $primary-color;
-// $pagination-link-current-font-color: $white;
+$pagination-link-current-background: $secondary-color;
+$pagination-link-current-font-color: $black;
 // $pagination-link-current-font-weight: $font-weight-bold;
 // $pagination-link-current-cursor: default;
-// $pagination-link-current-active-bg: $primary-color;
+$pagination-link-current-active-bg: $secondary-color;
 
 // 21. Panels
 // - - - - - - - - - - - - - - - - - - - - - - - - -
