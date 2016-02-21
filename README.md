@@ -7,9 +7,7 @@ This app is for storing, viewing and creating player quotes and one-line emotes/
 
 ## Pending Features
 
-- Completion of base styling/layout
 - Differentiation between quotes and emotes/"chat macros"
-- Parsing of quotes for database storage and colored display on page
+- Support glowing text
 - Raw text copy to clipboard option
-- Create your own quote/emote form and method
-- Add HoN font to site
+- "Create your own" quote/emote form and method

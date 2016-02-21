@@ -2,7 +2,7 @@ class Quote < ActiveRecord::Base
   
   def parse_colors
     # Find colors denoted by rgb values
-    text.gsub!(/(\^\d{3})/) { |s| '</span><span style="color: #' + s[1] + s[2] + s[3] + ';">' }
+    text.gsub!(/(\^\d{3})/) { |s| '</span><span style="color: rgb(' + (s[1].to_i * 28).to_s + ',' + (s[2].to_i * 28).to_s + ',' + (s[3].to_i * 28).to_s + ');">' }
     # Find colors denoted by letter
     color_letter_hash = {
       '^w' => '</span><span style="color:white;">',
