@@ -39,6 +39,6 @@ post '/submit' do
   if @quote.save
     redirect '/'
   else
-    'Quote did not save.'
+    'Quote must be between 2 and 160 characters in length.'
   end
 end

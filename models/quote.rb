@@ -1,4 +1,5 @@
 class Quote < ActiveRecord::Base
+  validates :text, length: { minimum: 2, maximum: 160 }
   
   def parse_colors
     # Find colors denoted by rgb values
