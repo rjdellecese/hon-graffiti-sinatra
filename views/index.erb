@@ -9,7 +9,14 @@
     <ul class="quotes">
       <% @quotes.each do |quote| %>
         <li>
+          <!--<span data-tooltip aria-haspopup="true" class="has-tip tip-left" title="Copy to clipboard">-->
+            <button class="clip-button secondary hollow radius tiny" data-clipboard-target="<%= quote.id %>">
+              <i class="fi-clipboard-notes"></i>
+            </button>
+          <!--</span>-->
+          &nbsp;
           <%= quote.parse_colors %>
+          <input id="<%= quote.id %>" readonly type="hidden" value="<%= quote.text %>" />
         </li>
       <% end %>
     </ul>

@@ -2,8 +2,9 @@ class Quote < ActiveRecord::Base
   validates :text, length: { minimum: 2, maximum: 160 }
   
   def parse_colors
+    parsed_text = Marshal.load(Marshal.dump(text))
     # Find colors denoted by rgb values
-    text.gsub!(/(\^\d{3})/) { |s| '</span><span style="color: rgb(' + (s[1].to_i * 28).to_s + ',' + (s[2].to_i * 28).to_s + ',' + (s[3].to_i * 28).to_s + ');">' }
+    parsed_text.gsub!(/(\^\d{3})/) { |s| '</span><span style="color: rgb(' + (s[1].to_i * 28).to_s + ',' + (s[2].to_i * 28).to_s + ',' + (s[3].to_i * 28).to_s + ');">' }
     # Find colors denoted by letter
     color_letter_hash = {
       '^w' => '</span><span style="color:white;">',
@@ -31,10 +32,10 @@ class Quote < ActiveRecord::Base
       '^g' => '</span><span style="color:green;">',
       '^G' => '</span><span style="color:green;">'
     }
-    text.gsub!(/(\^[wrbymnpkotvg])/i, color_letter_hash)
+    parsed_text.gsub!(/(\^[wrbymnpkotvg])/i, color_letter_hash)
     # Find color reset marker ^*
-    text.gsub!(/(\^\*)/, '</span>')
-    text
+    parsed_text.gsub!(/(\^\*)/, '</span>')
+    parsed_text
   end
   
   private

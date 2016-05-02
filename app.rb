@@ -8,6 +8,9 @@ require 'rubygems'
 require 'will_paginate'
 require 'will_paginate/active_record'
 require 'will_paginate-foundation'
+require 'sinatra/zero_clipboard'
+
+register Sinatra::ZeroClipboard::Assets
 
 assets do
   serve '/js', from: 'js'

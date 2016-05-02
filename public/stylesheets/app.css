@@ -2420,7 +2420,7 @@ button, .button {
   font-family: "Friz Quadrata";
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.5rem;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -2522,8 +2522,8 @@ button.small, .button.small {
 }
 /* line 233, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.tiny, .button.tiny {
-  padding: 0.625rem 1.25rem 0.6875rem 1.25rem;
-  font-size: 0.6875rem;
+  padding: 0.125rem 0.25rem 0.1875rem 0.25rem;
+  font-size: 1.25rem;
 }
 /* line 234, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.expand, .button.expand {
@@ -6749,14 +6749,14 @@ table tr td {
 /* Tooltips */
 /* line 38, ../../bower_components/foundation/scss/foundation/components/_tooltips.scss */
 .has-tip {
-  border-bottom: dotted 1px #CCCCCC;
-  color: #333333;
+  border-bottom: none;
+  color: #FFFFFF;
   cursor: help;
   font-weight: bold;
 }
 /* line 44, ../../bower_components/foundation/scss/foundation/components/_tooltips.scss */
 .has-tip:hover, .has-tip:focus {
-  border-bottom: dotted 1px #003f54;
+  border-bottom: none;
   color: #008CBA;
 }
 /* line 50, ../../bower_components/foundation/scss/foundation/components/_tooltips.scss */
@@ -6810,7 +6810,7 @@ table tr td {
 }
 /* line 95, ../../bower_components/foundation/scss/foundation/components/_tooltips.scss */
 .tooltip.opened {
-  border-bottom: dotted 1px #003f54 !important;
+  border-bottom: none !important;
   color: #008CBA !important;
 }
 
@@ -9737,13 +9737,13 @@ th.hide-for-touch {
 }
 @font-face {
   font-family: "Friz Quadrata";
-  src: url('../fonts/friz-quadrata-webfont.eot?1455929990');
-  src: url('../fonts/friz-quadrata-webfont.eot?&1455929990#iefix') format('embedded-opentype'), url('../fonts/friz-quadrata-webfont.woff?1455929990') format('woff'), url('../fonts/friz-quadrata-webfont.woff2?1455929990') format('woff2'), url('../fonts/friz-quadrata-webfont.ttf?1455929990') format('truetype'), url('../fonts/friz-quadrata-webfont.svg?1455929990') format('svg');
+  src: url('../fonts/friz-quadrata-webfont.eot?1457815006');
+  src: url('../fonts/friz-quadrata-webfont.eot?&1457815006#iefix') format('embedded-opentype'), url('../fonts/friz-quadrata-webfont.woff?1457815006') format('woff'), url('../fonts/friz-quadrata-webfont.woff2?1457815006') format('woff2'), url('../fonts/friz-quadrata-webfont.ttf?1457815006') format('truetype'), url('../fonts/friz-quadrata-webfont.svg?1457815006') format('svg');
 }
 @font-face {
   font-family: "Scurlock";
-  src: url('../fonts/scurlock-webfont.eot?1456006863');
-  src: url('../fonts/scurlock-webfont.eot?&1456006863#iefix') format('embedded-opentype'), url('../fonts/scurlock-webfont.woff?1456006864') format('woff'), url('../fonts/scurlock-webfont.woff2?1456006864') format('woff2'), url('../fonts/scurlock-webfont.ttf?1456006864') format('truetype'), url('../fonts/scurlock-webfont.svg?1456006864') format('svg');
+  src: url('../fonts/scurlock-webfont.eot?1457815006');
+  src: url('../fonts/scurlock-webfont.eot?&1457815006#iefix') format('embedded-opentype'), url('../fonts/scurlock-webfont.woff?1457815006') format('woff'), url('../fonts/scurlock-webfont.woff2?1457815006') format('woff2'), url('../fonts/scurlock-webfont.ttf?1457815006') format('truetype'), url('../fonts/scurlock-webfont.svg?1457815006') format('svg');
 }
 /* line 60, ../../scss/app.scss */
 ul {
