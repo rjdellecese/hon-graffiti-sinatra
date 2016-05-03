@@ -33,7 +33,7 @@ assets do
 end
   
 get '/' do
-  @quotes = Quote.paginate(page: params[:page], per_page: 20)
+  @quotes = Quote.paginate(page: params[:page], per_page: 10)
   erb :index
 end
 

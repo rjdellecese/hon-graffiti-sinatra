@@ -6,20 +6,15 @@
 
 <div class="row">
   <div class="medium-8 medium-offset-2 small-12 columns">
-    <ul class="quotes">
       <% @quotes.each do |quote| %>
-        <li>
-          <!--<span data-tooltip aria-haspopup="true" class="has-tip tip-left" title="Copy to clipboard">-->
-            <button class="clip-button secondary hollow radius tiny" data-clipboard-target="<%= quote.id %>">
-              <i class="fi-clipboard-notes"></i>
-            </button>
-          <!--</span>-->
-          &nbsp;
+        <div class="panel">
           <%= quote.parse_colors %>
           <input id="<%= quote.id %>" readonly type="hidden" value="<%= quote.text %>" />
-        </li>
+          <button class="clip-button secondary hollow radius tiny right" data-clipboard-target="<%= quote.id %>" title="Copy to clipboard">
+            <i class="fi-clipboard-notes"></i>
+          </button>
+        </div>
       <% end %>
-    </ul>
     <div class="pagination-centered">
       <%= will_paginate @quotes, renderer: FoundationPagination::Sinatra %>
     </div>
