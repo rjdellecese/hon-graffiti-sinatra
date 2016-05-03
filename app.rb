@@ -3,7 +3,7 @@ require 'sinatra/activerecord'
 require './config/environments' #database configuration
 require './models/quote'
 require 'sinatra/base'
-require 'sinatra/assetpack'
+require 'sinatra/asset_pipeline'
 require 'rubygems'
 require 'will_paginate'
 require 'will_paginate/active_record'
@@ -11,26 +11,7 @@ require 'will_paginate-foundation'
 require 'sinatra/zero_clipboard'
 
 register Sinatra::ZeroClipboard::Assets
-
-assets do
-  serve '/js', from: 'js'
-  serve '/bower_components', from: 'bower_components'
-  
-  js :modernizr, [
-    '/bower_components/modernizr/modernizr.js',
-  ]
-  
-  js :libs, [
-    '/bower_components/jquery/dist/jquery.js',
-    '/bower_components/foundation/js/foundation.js'
-  ]
-  
-  js :application, [
-    '/js/app.js'
-  ]
-  
-  js_compression :jsmin
-end
+register Sinatra::AssetPipeline
   
 get '/' do
   @quotes = Quote.paginate(page: params[:page], per_page: 10)
