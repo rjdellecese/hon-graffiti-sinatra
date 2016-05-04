@@ -3,17 +3,15 @@
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
  * MIT License
  */
+ 
+@import "compass/css3/font-face";
 
-@font-face {
-  font-family: "foundation-icons";
-  src: url("foundation-icons.eot");
-  src: url("foundation-icons.eot?#iefix") format("embedded-opentype"),
-       url("foundation-icons.woff") format("woff"),
-       url("foundation-icons.ttf") format("truetype"),
-       url("foundation-icons.svg#fontcustom") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@include font-face('foundation-icons',
+    font-files(
+    'foundation-icons.woff', woff,
+    'foundation-icons.ttf', ttf,
+    'foundation-icons.svg', svg),
+    'foundation-icons.eot');
 
 .fi-address-book:before,
 .fi-alert:before,
