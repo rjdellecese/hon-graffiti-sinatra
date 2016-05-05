@@ -9745,3 +9745,7 @@ th.hide-for-touch {
   src: url('../fonts/scurlock-webfont.eot?1457815006');
   src: url('../fonts/scurlock-webfont.eot?&1457815006#iefix') format('embedded-opentype'), url('../fonts/scurlock-webfont.woff?1457815006') format('woff'), url('../fonts/scurlock-webfont.woff2?1457815006') format('woff2'), url('../fonts/scurlock-webfont.ttf?1457815006') format('truetype'), url('../fonts/scurlock-webfont.svg?1457815006') format('svg');
 }
+/* line 60, ../../scss/app.scss */
+ul {
+  list-style-type: none;
+}
