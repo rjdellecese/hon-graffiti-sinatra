@@ -1,7 +1,5 @@
 @import "settings";
 @import "foundation";
-@import "../bower_components/foundation//foundation-icons/foundation-icons";
-@import "hon-fonts";
 
 // Or selectively include components
 // @import
@@ -40,3 +38,21 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+@import "compass/css3/font-face";
+
+@include font-face('Friz Quadrata',
+    font-files(
+    'friz-quadrata-webfont.woff', woff,
+    'friz-quadrata-webfont.woff2', woff2,
+    'friz-quadrata-webfont.ttf', ttf,
+    'friz-quadrata-webfont.svg', svg),
+    'friz-quadrata-webfont.eot');
+    
+@include font-face('Scurlock',
+    font-files(
+    'scurlock-webfont.woff', woff,
+    'scurlock-webfont.woff2', woff2,
+    'scurlock-webfont.ttf', ttf,
+    'scurlock-webfont.svg', svg),
+    'scurlock-webfont.eot');
