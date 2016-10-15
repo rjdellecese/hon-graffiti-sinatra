@@ -1,3 +1,7 @@
+### This app has been abandoned! Find the new HoN Graffiti [here.](https://github.com/rjdellecese/hon-graffiti)
+
+---
+
 # HoN Graffiti
 
 This app is for storing, viewing and creating player quotes and one-line emotes/"chat
