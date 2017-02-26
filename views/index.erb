@@ -8,7 +8,7 @@
   <div class="medium-8 medium-offset-2 small-12 columns">
       <% @quotes.each do |quote| %>
         <div class="panel">
-          <%= quote.parse_colors %>
+          <%= quote.text %>
           <input id="<%= quote.id %>" readonly type="hidden" value="<%= quote.text %>" />
           <button class="clip-button secondary hollow radius tiny right" data-clipboard-target="<%= quote.id %>" title="Copy to clipboard">
             <i class="fi-clipboard-notes"></i>
