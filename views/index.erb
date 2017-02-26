@@ -9,7 +9,6 @@
       <% @quotes.each do |quote| %>
         <div class="panel">
           <%= quote.text %>
-          <input id="<%= quote.id %>" readonly type="hidden" value="<%= quote.text %>" />
           <button class="clip-button secondary hollow radius tiny right" data-clipboard-target="<%= quote.id %>" title="Copy to clipboard">
             <i class="fi-clipboard-notes"></i>
           </button>
